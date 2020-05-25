@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32C626C0-E0FD-471E-85E1-B5F7DA32ED27}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Weigh1</RootNamespace>
+    <AssemblyName>Weigh1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin">
+      <HintPath>C:\Users\msi\Downloads\CSkin 16.1.14.3\CSkin 16.1.14.3\CSkin 4.0\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="HZH_Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HZH_Controls.1.0.9\lib\net40\HZH_Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\msi\Desktop\JOueryEUI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apiweb.cs" />
+    <Compile Include="Cai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cai.Designer.cs">
+      <DependentUpon>Cai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cailist.cs" />
+    <Compile Include="classes\Title.cs" />
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="Ddqs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ddqs.Designer.cs">
+      <DependentUpon>Ddqs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gong.Designer.cs">
+      <DependentUpon>Gong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gonglist.cs" />
+    <Compile Include="Headd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Headd.Designer.cs">
+      <DependentUpon>Headd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpm.Designer.cs">
+      <DependentUpon>helpm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JJlu.cs" />
+    <Compile Include="Jlu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Jlu.Designer.cs">
+      <DependentUpon>Jlu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main1.Designer.cs">
+      <DependentUpon>Main1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Packagenos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Packagenos.Designer.cs">
+      <DependentUpon>Packagenos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign.Designer.cs">
+      <DependentUpon>Sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sign1.Designer.cs">
+      <DependentUpon>Sign1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sjld.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sjld.Designer.cs">
+      <DependentUpon>Sjld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabkeGong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabkeGong.Designer.cs">
+      <DependentUpon>TabkeGong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tableCai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tableCai.Designer.cs">
+      <DependentUpon>tableCai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tips.Designer.cs">
+      <DependentUpon>Tips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Token.cs" />
+    <Compile Include="UCTestGridTable_CustomCell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTestGridTable_CustomCell.Designer.cs">
+      <DependentUpon>UCTestGridTable_CustomCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Weighsumbit.cs" />
+    <Compile Include="Wie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wie.Designer.cs">
+      <DependentUpon>Wie.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cai.resx">
+      <DependentUpon>Cai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ddqs.resx">
+      <DependentUpon>Ddqs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gong.resx">
+      <DependentUpon>Gong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Headd.resx">
+      <DependentUpon>Headd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpm.resx">
+      <DependentUpon>helpm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jlu.resx">
+      <DependentUpon>Jlu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main1.resx">
+      <DependentUpon>Main1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Packagenos.resx">
+      <DependentUpon>Packagenos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign.resx">
+      <DependentUpon>Sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign1.resx">
+      <DependentUpon>Sign1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sjld.resx">
+      <DependentUpon>Sjld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabkeGong.resx">
+      <DependentUpon>TabkeGong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tableCai.resx">
+      <DependentUpon>tableCai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tips.resx">
+      <DependentUpon>Tips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTestGridTable_CustomCell.resx">
+      <DependentUpon>UCTestGridTable_CustomCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wie.resx">
+      <DependentUpon>Wie.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图层 02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wite.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
